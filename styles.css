@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Freeman", sans-serif;
+    text-transform: uppercase;
+    cursor: default;
+    letter-spacing: 1px;
+    color: white;
+}
+
+:focus-visible {
+    outline-color: gold;
+    outline-width: 6px;
+    outline-offset: 2px;
+    outline-style: double;
+}
+
+.container,
+#main-input,
+.add-btn,
+.clear-btn,
+.save-btn {
+    font-size: 1.2rem;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: papayawhip;
+}
+
+.container {
+    background-color: cadetblue;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 95vw;
+}
+
+.container-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: 100;
+    background-color: chocolate;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input[type=text] {
+    cursor: text;
+}
+
+#main-input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+
+#main-input {
+    color: darkolivegreen;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button,
+i {
+    border: none;
+    cursor: pointer;
+}
+
+.add-btn,
+.clear-btn,
+.save-btn {
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.add-btn {
+    background-color: goldenrod;
+    border: none;
+    margin-left: 10px;
+    text-wrap: nowrap;
+}
+
+.clear-btn {
+    background-color: indianred;
+}
+
+.clear-btn,
+.save-btn {
+    width: 48%;
+}
+
+.save-btn {
+    background-color: mediumseagreen;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+li {
+    padding: 10px 15px;
+    text-align: left;
+    transition: all .5s ease;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration-thickness: 5px;
+    transition: all .5s ease;
+}
+
+li:hover {
+    background-color: azure;
+}
+
+li:hover span,
+li:hover i {
+    color: darkolivegreen;
+}
+
+.item-text {
+    padding: 0 10px;
+    overflow-wrap: break-word;
+}
+
+.complete-btn:hover.complete-btn i {
+    transform: scale(1.3);
+}
+
+.delete-btn:hover.delete-btn i {
+    transform: scale(1.6);
+}
+
+.complete-btn i,
+.delete-btn i {
+    transition: all .5s ease;
+}
+
+.complete-btn i,
+.delete-btn i {
+    font-size: 1.3rem;
+}
+
+.complete-btn,
+.delete-btn {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.delete-btn {
+    margin-left: auto;
+}
+
+.completed {
+    opacity: 0.6;
+    transition: transform 0.5s ease-in-out;
+}
+
+.add-btn:active {
+    background-color: rgb(229, 201, 128);
+}
+
+.clear-btn:active {
+    background-color: rgb(222, 134, 134);
+}
+
+.save-btn:active {
+    background-color: rgb(119, 215, 162);
+}
