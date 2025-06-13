@@ -181,6 +181,7 @@ li:hover i {
 .completed {
     opacity: 0.6;
     transition: transform 0.5s ease-in-out;
+    text-decoration: line-through;
 }
 
 .add-btn:active {
